@@ -1,0 +1,68 @@
+"student_metadata": {
+"name": "Kalash kumari thakur",
+"roll_number": "230136",
+"course": "Advanced Machine Learning",
+"exam": "Mid-Semester Examination",
+"part": "Part A",
+"submission_date": "2026-03-01"
+},
+"llm_tools_used": [
+{
+"tool_name": "Google Gemini",
+"model": "Gemini 3.1 Pro",
+"provider": "Google"
+}
+],
+"full_llm_interaction_log": [
+{
+"interaction_id": 1,
+"date": "2026-03-01",
+"tool_name": "Gemini",
+"model": "Gemini 3.1 Pro",
+"purpose": "Understand the research paper",
+"prompt": "Brief me about this research paper and what are models we are using in here?",
+"llm_response_used": "Provided me the summary of the research paper and told me which model we are currently using",
+"how_it_helped": "Clarified intuition before re-reading the paper.",
+"student_verification": "Verified using equations from the paper.",
+"confidence_level": 4
+}
+],
+"top_5_prompts": [
+  {
+    "rank": 1,
+    "interaction_id": 2,
+    "prompt": "Explain the step-by-step process of shapelet discovery in the Time Series Shapelets paper by Ye and Keogh (2009), including how early abandoning and entropy pruning work.",
+    "why_important": "This clarified the core algorithm (brute-force candidate search + distance computation + information gain split) and optimizations that make it feasible to reimplement on a laptop without heavy compute."
+  },
+  {
+    "rank": 2,
+    "interaction_id": 3,
+    "prompt": "What datasets were used in the Time Series Shapelets paper, and are there public substitutes like the UCR archive that meet the exam reproducibility requirements (≥50 time points, CPU-only)?",
+    "why_important": "Helped confirm reproducibility — UCR datasets (e.g., Gun-Point, Trace) are public, small, and perfect for student-level simplification/experiments on a standard laptop."
+  },
+  {
+    "rank": 3,
+    "interaction_id": 5,
+    "prompt": "What are common failure cases or limitations of shapelet-based time series classification, such as in noisy data, global patterns, or long series?",
+    "why_important": "Identified key weaknesses (e.g., assumes local discriminative patterns exist, brute-force slow on very long series without pruning, sensitive to noise hiding shapelets) — essential for explaining assumptions and failure modes in Part C."
+  },
+  {
+    "rank": 4,
+    "interaction_id": 7,
+    "prompt": "How can I implement a simplified version of shapelet discovery using Python libraries like numpy, scikit-learn, or tslearn for a small UCR dataset?",
+    "why_important": "Provided practical guidance on reimplementation (e.g., numpy for distances, scikit-learn for 1-NN classifier) — directly supports Part B reproduction and ensures it's doable without custom code or GPUs."
+  },
+  {
+    "rank": 5,
+    "interaction_id": 8,
+    "prompt": "Why is the shapelets approach a good fit for classical time-series modeling in the exam, and how does it compare in ease to SVM or GMM papers?",
+    "why_important": "Built intuition on why this paper aligns with exam rules (time-series variant, methodological, low equations, visual/intuitive) and why it's easier/safer than alternatives for student-level work and explanation."
+  }
+], 
+"student declaration": {
+"statement": "I declare that this JSON file contains a complete and honest record
+of my LLM usage for Part A.",
+"understanding acknowledged": true,
+"signature": "Kalash kumari thakur",
+"date": "2026-03-01"
+}
