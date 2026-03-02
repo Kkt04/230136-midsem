@@ -12,20 +12,44 @@
 "model": "Gemini 3.1 Pro",
 "provider": "Google"
 }
-],
+], 
 "full_llm_interaction_log": [
-{
-"interaction_id": 1,
-"date": "2026-03-01",
-"tool_name": "Gemini",
-"model": "Gemini 3.1 Pro",
-"purpose": "Understand the research paper",
-"prompt": "Brief me about this research paper and what are models we are using in here?",
-"llm_response_used": "Provided me the summary of the research paper and told me which model we are currently using",
-"how_it_helped": "Clarified intuition before re-reading the paper.",
-"student_verification": "Verified using equations from the paper.",
-"confidence_level": 4
-}
+  {
+    "interaction_id": 1,
+    "date": "2026-03-01",
+    "tool_name": "Gemini",
+    "model": "Gemini 3.1 Pro",
+    "purpose": "Understand the research paper",
+    "prompt": "Brief me about this research paper and what are models we are using in here?",
+    "llm_response_used": "Provided me the summary of the research paper and told me which model we are currently using",
+    "how_it_helped": "Clarified intuition before re-reading the paper.",
+    "student_verification": "Verified using equations from the paper.",
+    "confidence_level": 4
+  },
+  {
+    "interaction_id": 2,
+    "date": "2026-03-02",
+    "tool_name": "Gemini",
+    "model": "Gemini 3.1 Pro",
+    "purpose": "Assess exam fit and ease of implementation",
+    "prompt": "Why is the shapelets paper suitable for my Advanced ML mid-sem exam Part A, and how can I implement a simplified version using scikit-learn or numpy?",
+    "llm_response_used": "Partially",
+    "how_it_helped": "Confirmed it aligns with time-series variant, low equations, public data, CPU feasibility, and gave ideas for numpy distance loops + 1-NN classifier.",
+    "student_verification": "Compared to exam rules (CORE A*, 2009, methodological, no GPU); tested toy numpy code on synthetic series — works fast and simple.",
+    "confidence_level": 5
+  },
+  {
+    "interaction_id": 3,
+    "date": "2026-03-02",
+    "tool_name": "Gemini",
+    "model": "Gemini 3.1 Pro",
+    "purpose": "Identify limitations and failure cases",
+    "prompt": "What are the main limitations, assumptions, or failure cases of the shapelet method in the Ye and Keogh 2009 paper for time series classification?",
+    "llm_response_used": "Partially",
+    "how_it_helped": "Revealed issues like sensitivity to noise, assumption of local discriminative patterns, and brute-force scalability for very long series.",
+    "student_verification": "Verified from paper's discussion and results sections; e.g., noise in arrowheads dataset affects shapelet quality, and pruning helps but doesn't eliminate all compute cost.",
+    "confidence_level": 4
+  }
 ],
 "top_5_prompts": [
   {
