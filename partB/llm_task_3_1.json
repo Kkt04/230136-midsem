@@ -1,0 +1,74 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-09",
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "purpose": "Choose ablation components for Task 3.1",
+        "prompt": "Suggest two components to ablate in shapelets: one for gain, one for distance",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Chose info gain (Def 7) and subsequence dist (Def 5)",
+        "student_verification": "Implemented independent ablations with toy data; refs Sec 3",
+        "confidence_level": 5,
+        "task_tag": "Task 3.1",
+        "code_used_verbatim": false,
+        "student_modification": "Designed and implemented the ablation experiments in my notebook by disabling specific components of the algorithm. Created separate experiment setups for removing the information gain calculation and modifying the subsequence distance computation, then ran the classifier on the dataset to measure the effect on accuracy."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-09",
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "purpose": "Interpret ablation results",
+        "prompt": "How to interpret drop in acc when ablating gain in shapelets",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Expected 25% drop for random splits",
+        "student_verification": "Wrote 5–7 sentence para based on gain=0.05 vs full 0.12",
+        "confidence_level": 4,
+        "task_tag": "Task 3.1",
+        "code_used_verbatim": false,
+        "student_modification": "Analysed the experimental results and wrote my own interpretation of how removing the information gain component affects classification performance. Compared the accuracy values from the ablation experiment with the full model and explained the observed drop in performance."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "Suggest two components to ablate in shapelets: one for gain, one for distance",
+        "why_important": "Selected gain and dist for 20-mark ablations, with independent setups"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "How to interpret drop in acc when ablating gain in shapelets",
+        "why_important": "Guided reasoning for 6-mark interpretations (e.g., 25% drop matches expectation)"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 3.1.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }

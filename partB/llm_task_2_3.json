@@ -1,0 +1,79 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "provider": "xAI"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-08",
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "purpose": "Explain result gap for Task 2.3",
+        "prompt": "Why would toy shapelet acc be 60% vs paper's 93% on Gun/NoGun",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Reasons: toy simplicity, no pruning/tree depth",
+        "student_verification": "Linked to Sec 5.4 results and Sec 3.3 pruning absence",
+        "confidence_level": 5,
+        "task_tag": "Task 2.3",
+        "code_used_verbatim": false,
+        "student_modification": "Expanded the explanation by analysing my experimental results and comparing them with the paper's reported accuracy. Rewrote the reasoning in my own words and added discussion about factors such as simplified dataset design, absence of pruning optimisations, and smaller dataset size."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-08",
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "purpose": "Checklist items",
+        "prompt": "Reproducibility checklist for shapelets notebook",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Listed seeds, deps, hyperparams",
+        "student_verification": "Added to final cell per rubric",
+        "confidence_level": 4,
+        "task_tag": "Task 2.3",
+        "code_used_verbatim": false,
+        "student_modification": "Implemented the reproducibility checklist in the final notebook cell, including random seed settings, dataset generation parameters, and required Python dependencies. Reformatted the checklist to clearly document steps needed to rerun the experiment."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "Why would toy shapelet acc be 60% vs paper's 93% on Gun/NoGun",
+        "why_important": "Framed 3–5 sentence explanation for honest gap discussion"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "Reproducibility checklist for shapelets notebook",
+        "why_important": "Ensured full checklist for 15 marks, covering seeds/deps"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 2.3.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }

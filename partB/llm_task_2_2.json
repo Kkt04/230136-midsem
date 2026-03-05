@@ -1,0 +1,79 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "provider": "xAI"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-08",
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "purpose": "Implement distance and gain for Task 2.2",
+        "prompt": "Python code for SubsequenceDist (Def 5) and info gain (Def 7) from shapelets Sec 3",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Gave Euclidean and entropy functions",
+        "student_verification": "Adapted to match Table 5 OSP and Def 6 entropy; tested on toy data",
+        "confidence_level": 5,
+        "task_tag": "Task 2.2",
+        "code_used_verbatim": false,
+        "student_modification": "Modified the suggested code to match the exact definitions from the paper. Implemented my own versions of the subsequence sliding-window distance and entropy-based information gain functions. Adjusted variable names, added z-normalization for subsequences, and verified correctness using small toy time-series examples."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-08",
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "purpose": "Add paper annotations to code",
+        "prompt": "How to annotate shapelet code blocks with Sec 3 refs for reproduction",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Suggested markdown after each block",
+        "student_verification": "Used for 2–3 sentence explanations citing Def 5/Table 5",
+        "confidence_level": 5,
+        "task_tag": "Task 2.2",
+        "code_used_verbatim": false,
+        "student_modification": "Added my own markdown explanations after each code block describing how the implementation corresponds to the paper (e.g., Definition 5 for SubsequenceDist and Table 5 for the optimal split point). Rewrote the explanations in my own words and ensured the notebook structure clearly follows the algorithm steps."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "Python code for SubsequenceDist (Def 5) and info gain (Def 7) from shapelets Sec 3",
+        "why_important": "Core for reproducing discovery; ensured code-paper mapping for 20-mark rubric"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "How to annotate shapelet code blocks with Sec 3 refs for reproduction",
+        "why_important": "Guided explanations after blocks, tying to equations/sections as required"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 2.2.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }

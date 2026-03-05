@@ -1,0 +1,79 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "provider": "xAI"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-05",
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "purpose": "Outline core steps for Task 1.1",
+        "prompt": "Summarize the step-by-step shapelet discovery algorithm from Section 3 of Ye & Keogh 2009, including references to tables and definitions",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Provided structure for candidates, distance, gain, pruning, tree building, and classification",
+        "student_verification": "Verified against Table 3 (candidates), Def 5 (distance), Def 7 (gain), Table 7 (pruning), Sec 4 (tree), Fig 13 (classification) in the paper PDF",
+        "confidence_level": 5,
+        "task_tag": "Task 1.1",
+        "code_used_verbatim": false,
+        "student_modification": "Reorganized the algorithm explanation into six clear steps (candidate generation, distance computation, information gain calculation, pruning, shapelet selection, and classification). Added explicit references to the corresponding tables and definitions from the paper after verifying them manually."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-05",
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "purpose": "Refine purposes and references",
+        "prompt": "Explain the purpose of entropy pruning and early abandon in shapelets paper Sec 3.3 and 3.2",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Clarified speedup from O(m³) to feasible, with ties to local motifs",
+        "student_verification": "Cross-checked with Fig 11 (pruning speedup) and Table 6 (early abandon pseudocode); rewrote in own words for Step 4",
+        "confidence_level": 4,
+        "task_tag": "Task 1.1",
+        "code_used_verbatim": false,
+        "student_modification": "Simplified the explanation and rewrote it in my own words for the report. Added references to Figure 11 and Table 6 from the paper and connected the explanation to the computational complexity discussion."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "Summarize the step-by-step shapelet discovery algorithm from Section 3 of Ye & Keogh 2009, including references to tables and definitions",
+        "why_important": "Gave exact structure for my 6 steps with paper refs (e.g., Table 3, Def 7), ensuring specificity over generic time-series descriptions"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "Explain the purpose of entropy pruning and early abandon in shapelets paper Sec 3.3 and 3.2",
+        "why_important": "Helped articulate efficiency purposes in Steps 2 and 4, linking to overall interpretability claim in Sec 1"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 1.1.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }

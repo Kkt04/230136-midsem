@@ -1,0 +1,79 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "provider": "xAI"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-06",
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "purpose": "Identify assumptions for Task 1.2",
+        "prompt": "List 3 key assumptions in the shapelets method from Ye & Keogh 2009, with paper references",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Suggested contiguous subsequence, Euclidean, local separability",
+        "student_verification": "Mapped to Def 9 (Sec 2.1), Def 5 (Sec 3.2), Sec 1 (motivation) and Fig 3 (arrowheads)",
+        "confidence_level": 5,
+        "task_tag": "Task 1.2",
+        "code_used_verbatim": false,
+        "student_modification": "Refined the suggested assumptions and rewrote them in my own words. Added explicit references to Definition 9, Definition 5, and Section 1 of the paper after verifying the locations in the original PDF. Structured the answer into three clearly separated assumptions with explanations."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-06",
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "purpose": "Develop violation scenarios",
+        "prompt": "Provide violation scenarios for Euclidean distance assumption in shapelets Sec 3.2",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Inspired time-stretched Gun/NoGun example",
+        "student_verification": "Tied to Sec 6 limitations and Sec 5.4 Gun/NoGun results; added own ECG warping for realism",
+        "confidence_level": 4,
+        "task_tag": "Task 1.2",
+        "code_used_verbatim": false,
+        "student_modification": "Expanded the suggested violation scenario by adding my own examples such as time-warped ECG signals. Rewrote the explanation to connect the violation to limitations discussed in Section 6 of the paper and related it to the Gun/NoGun dataset example."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "List 3 key assumptions in the shapelets method from Ye & Keogh 2009, with paper references",
+        "why_important": "Directly informed my 3 assumptions with traceable refs (Def 9, Def 5, Sec 1), avoiding generic ML ones"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "Provide violation scenarios for Euclidean distance assumption in shapelets Sec 3.2",
+        "why_important": "Helped craft specific violations (e.g., stretched series), linking to real paper datasets like Gun/NoGun"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 1.2.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }

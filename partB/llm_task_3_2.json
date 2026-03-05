@@ -1,0 +1,79 @@
+{
+    "student_metadata": {
+      "name": "Kalash kumari thakur",
+      "roll_number": "230136",
+      "course": "Advanced Machine Learning",
+      "exam": "Mid-Semester Examination",
+      "part": "Part B",
+      "submission_date": "2026-03-10"
+    },
+    "llm_tools_used": [
+      {
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "provider": "Google"
+      },
+      {
+        "tool_name": "Claude",
+        "model": "Claude 3.5 Sonnet",
+        "provider": "Anthropic"
+      },
+      {
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "provider": "xAI"
+      }
+    ],
+    "full_llm_interaction_log": [
+      {
+        "interaction_id": 1,
+        "date": "2026-03-09",
+        "tool_name": "Grok",
+        "model": "Grok 4",
+        "purpose": "Design failure mode for Task 3.2",
+        "prompt": "Suggest a failure mode for shapelets linked to Euclidean assumption from Task 1.2",
+        "llm_response_used": "Yes",
+        "how_it_helped": "Proposed high noise (σ=1) to blur motifs",
+        "student_verification": "Implemented on toy data; linked to Assumption 2 and Sec 3.2/Table 6",
+        "confidence_level": 5,
+        "task_tag": "Task 3.2",
+        "code_used_verbatim": false,
+        "student_modification": "Implemented the proposed failure scenario by modifying the synthetic dataset generator to add high Gaussian noise (sigma = 1). Ran the shapelet discovery code on this noisy dataset and observed how the motifs became harder to detect, which I used to demonstrate the failure mode."
+      },
+      {
+        "interaction_id": 2,
+        "date": "2026-03-09",
+        "tool_name": "Google Gemini",
+        "model": "Gemini 3.1 Pro",
+        "purpose": "Suggest modification",
+        "prompt": "Concrete fix for noise failure in shapelets Euclidean dist",
+        "llm_response_used": "Partially",
+        "how_it_helped": "Suggested z-normalization",
+        "student_verification": "Added as 1-sentence suggestion, no code needed per rubric",
+        "confidence_level": 4,
+        "task_tag": "Task 3.2",
+        "code_used_verbatim": false,
+        "student_modification": "Based on the suggestion, I proposed a modification in my report explaining that applying z-normalization before computing Euclidean distance could reduce the effect of noise and scale differences. I wrote the explanation in my own words and connected it to the failure mode observed in the experiment."
+      }
+    ],
+    "top_5_prompts": [
+      {
+        "rank": 1,
+        "interaction_id": 1,
+        "prompt": "Suggest a failure mode for shapelets linked to Euclidean assumption from Task 1.2",
+        "why_important": "Tied noise failure to Assumption 2 for 7-mark explanation, with empirical demo"
+      },
+      {
+        "rank": 2,
+        "interaction_id": 2,
+        "prompt": "Concrete fix for noise failure in shapelets Euclidean dist",
+        "why_important": "Informed 3-mark modification (z-normalize), closing loop with Task 1.2"
+      }
+    ],
+    "student_declaration": {
+      "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part B Task 3.2.",
+      "understanding_acknowledged": true,
+      "signature": "Kalash kumari thakur",
+      "date": "2026-03-10"
+    }
+  }
